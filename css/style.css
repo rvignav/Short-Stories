@@ -53,6 +53,13 @@ canvas {
   height: 30vh;
 }
 
+@media only screen and (max-width: 500px) {
+  canvas {
+    width: 100vw;
+    height: 30vh;
+  }
+}
+
 body {
   line-height: 1.7;
   color: gray;

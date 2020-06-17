@@ -28,12 +28,77 @@
     <link rel="stylesheet" href="css/style.css" />
 
   </head>
+<style>
+  #tot {
+    left: 8%; top: 10%;
+  }
+  #code {
+    position: relative;top:40px;left:60px;text-align: right;
+    display: none;
+  }
+  #code2 {
+    position: relative;top:40px;left:60px;text-align: right;
+  }
 
-  <!-- <h3 style="position: relative;top:15px;left:1%; color:#000">Short Stories from a Coder</h3> -->
+  @media only screen and (max-width: 1335px) { 
+    #tot {
+        left: 5vw; top: 10%;
+      }
+      h1 {
+        font-size: xx-large;
+        position: relative;
+        bottom:40px;
+      }
+      #code2 {
+      position: relative;left:40px;text-align: right;
+     }
+  }
+
+  @media only screen and (max-width: 1050px) { 
+    #tot {
+        left: 9vw; top: 10%;
+      }
+      h1 {
+        font-size: x-large;
+        position: relative;
+        bottom:40px;
+      }
+      #code2 {
+      position: relative;left:50px;text-align: right;
+     }
+  }
+
+  @media only screen and (max-width: 1410px) { 
+      
+      #code2 {
+      position: relative;top:40px;left:00px;text-align: right;
+     }
+  }
+
+  @media only screen and (max-width: 810px) {
+      #tot {
+        left: 1%; top: 10%;
+      }
+      h1 {
+        font-size: x-large;
+        position: relative;
+        bottom:40px;
+      }
+      #code {
+        position: relative;top:-30px;left:0px;bottom:10px;text-align: center;
+        display: block;
+      }
+      #code2 {
+        position: relative;top:-30px;left:0px;bottom:10px;text-align: center;
+        display: none;
+      }
+  }
+</style>
   <div id="wrapper">
-    <div style="position: absolute; left: 8%; top: 10%;">
-      <center><h1 style="color:#FFF; font-family: Courier, monospace;">System.out.println("Code isn't my first language.")</h1></center>
-      <center style="position: relative;top:40px; color:#FFF;left:60px;text-align: right";><h6><em>Just as gold is formed from colliding neutron stars, ideas are products of colliding perspectives.</em></h6></center>
+    <div id="tot" style="position: absolute; ">
+      <center ><h1 style="color:#FFF; font-family: Courier, monospace;">System.out.println("Code isn't my first language.")</h1></center>
+      <center id="code" style="color:#FFF;"><h6><em>Just as gold is formed from colliding<br>neutron stars, ideas are products of<br>colliding perspectives.</em></h6></center>
+      <center id="code2" style="color:#FFF;"><h6><em>Just as gold is formed from colliding neutron stars, ideas are products of colliding perspectives.</em></h6></center>
 
     </div>
 
@@ -253,13 +318,35 @@ function fauxClick(x, y) {
 }
 </script>
 
+<style>
+  button {
+    position: relative;
+    left: 36%;
+  }
+
+  @media only screen and (max-width: 767px) {
+      button {
+        position: relative;
+        left: 0%;
+      }
+      #lf {
+        position: relative; 
+        top: 30px;
+      }
+      #lf2 {
+        position: relative; 
+        top: 60px;
+      }
+    }
+</style>
+
   <body class="bg-light">
     <div class="tab">
-      <button style="position: relative; left:36%" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">2020</button>
-  <button style="position: relative; left:36%" class="tablinks" onclick="openCity(event, 'Paris')">2019</button>
-  <button style="position: relative; left:36%" class="tablinks" onclick="openCity(event, 'Tokyo')">2018</button>
-  <button style="position: relative; left:36%" class="tablinks" onclick="openCity(event, '2017')">2017</button>
-  <button style="position: relative; left:36%" class="tablinks" onclick="openCity(event, '2016')">2016</button>
+      <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">2020</button>
+  <button  class="tablinks" onclick="openCity(event, 'Paris')">2019</button>
+  <button  class="tablinks" onclick="openCity(event, 'Tokyo')">2018</button>
+  <button  class="tablinks" onclick="openCity(event, '2017')">2017</button>
+  <button class="tablinks" onclick="openCity(event, '2016')">2016</button>
 </div></center>
 
 <script>
@@ -317,7 +404,7 @@ function fauxClick(x, y) {
           </a>
         </div>
         <!-- COLUMN BREAK  -->
-        <div class="col-md-4">
+        <div id="lf" class="col-md-4">
           <a
             href="faucet.html"
             class="h-entry mb-30 v-height gradient"
@@ -346,7 +433,7 @@ function fauxClick(x, y) {
           </a>
         </div>
         <!-- COLUMN BREAK -->
-        <div class="col-md-4">
+        <div id="lf2" class="col-md-4">
           <a
             href="unconventional.html"
             class="h-entry mb-30 v-height gradient"
@@ -418,7 +505,7 @@ function fauxClick(x, y) {
           </a>
         </div>
         <!-- COLUMN BREAK  -->
-        <div class="col-md-4">
+        <div id="lf" class="col-md-4">
           <a
             href="faucet.html"
             class="h-entry mb-30 v-height gradient"
@@ -447,7 +534,7 @@ function fauxClick(x, y) {
           </a>
         </div>
         <!-- COLUMN BREAK -->
-        <div class="col-md-4">
+        <div id="lf2" class="col-md-4">
           <a
             href="unconventional.html"
             class="h-entry mb-30 v-height gradient"
