@@ -47,17 +47,16 @@
   border-top: none;
 }
 
+@media only screen and (max-width: 350px) {
+  .tab button {
+    font-size: small;
+  }
+}
+
 canvas {
   display: block;
   width: 100vw;
   height: 30vh;
-}
-
-@media only screen and (max-width: 500px) {
-  canvas {
-    width: 100vw;
-    height: 30vh;
-  }
 }
 
 body {
