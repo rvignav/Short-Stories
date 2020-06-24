@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
   <head>
     <title>Short Stories from a Coder</title>
     <meta charset="utf-8" />
@@ -64,7 +67,7 @@
 
       <center><h3 style="position: relative; top: 50px;">
         <pre  class="prettyprint"><code class="language-java">
-public class World extends Endangered
+public class World
               </code></pre>
     </h3></center>
       <center>
@@ -72,13 +75,56 @@ public class World extends Endangered
       </center>
       
       <pre style="position: relative; top: 50px; background-color: #f3f6f8 !important;" class="prettyprint"><code class="language-java">
-    public class Java {
-        Here
+    import crisis;
+
+    public class World {
+        public static final boolean pandemic = true;
+        public static final boolean systemicRacism = true;
+        public static final boolean globalWarming = true;
+
+        private long population;
+
+        public World(int year) {
+            population = 7800000000 * Math.exp(1.0136 * year - 2020);
+            if (pandemic) checkPandemicResponse();
+            System.out.println(Arrays.toString(checkGlobalResources(year)));
+        }
+
+        public static void checkPandemicResponse(year) {
+            int ventilatorCount = 140000;
+            int COVIDCases = 479000;
+            if (this.pandemic) {
+                ventilatorCount *= Math.pow(2, year - 2019);
+                if (!systemicRacism) {
+                    COVIDcases *= Math.pow(1.051, year - 2019);
+                } else {
+                    COVIDcases *= Math.pow(1.16, year - 2019);
+                }
+            }
+            if (COVIDCases >= 1000000 && ventilatorCount < COVIDcases * 0.33) {
+                System.err.println("Error: System shutdown!")
+            }
+        }
+
+        public static int[] checkGlobalResources(int year) {
+            int fossilFuels = 100 / Math.pow(2, year - 2019);  
+            int renewableEnergy = 250 / Math.pow(1.5, year - 2019);  
+            int polarIceCaps = 100;
+            if (this.globalWarming) {
+                polarIceCaps /= 4;
+            }
+            int pollution = 100 * Math.pow(2, year - 2019);  
+            if (population >= 8 * Math.pow(10, 9) && (fossilFuels <= 5 || 
+              renewableEnergy <= 20 || polarIceCaps <= 10 || pollution >= 300)) {
+                System.err.println("Error: System overload!");
+            }
+            return new int[] {fossilFuels, renewableEnergy, polarIceCaps, pollution};
+        }
     }
       </code></pre>
 
      <br>
-     <center><button style=" position: relative; top:75px; vertical-align:middle;"class="buttonx" onclick="window.location.href='index.html'"><span>Return Home</span></button></center>
+     <center><button style=" position: relative; top:55px; vertical-align:middle;"class="buttonx" onclick="window.location.href='index.html'"><span>Return Home</span></button></center>
     
     </div>
   </div>

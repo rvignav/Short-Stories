@@ -6,6 +6,7 @@
 
 pre.prettyprint {
   border: none !important;
+  border-radius: 10px;
 }
 
 /* Style the buttons that are used to open the tab content */
