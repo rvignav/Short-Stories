@@ -72,8 +72,19 @@
      }
   }
 
+  @media only screen and (max-width: 2000px) { 
+      #type {
+        position: relative; left:10%;
+      }
+      #code2 {
+      position: relative;top:40px;left:10%;text-align: right;
+     }
+  }
+
   @media only screen and (max-width: 1410px) { 
-      
+      #type {
+        position: relative; left:10%;
+      }
       #code2 {
       position: relative;top:40px;left:00px;text-align: right;
      }
@@ -117,9 +128,39 @@
       }
   }
 </style>
+
+<style>
+  /* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+</style>
+
   <div id="wrapper">
     <div id="tot" style="position: absolute; ">
-      <center><h1 style="color:#FFF; font-family: Courier, monospace;">System.out.println("Code isn't my first language.")</h1></center>
+     
+      <center><h1 id="type" style="color:#FFF; font-family: Courier, monospace;">System.out.println("Code isn't my first language.")</h1></center>
       <center id="code" style="color:#FFF;"><h6><em>Just as gold is formed from colliding<br>neutron stars, ideas are products of<br>colliding perspectives.</em></h6></center>
       <center id="code2" style="color:#FFF;"><h6><em>Just as gold is formed from colliding neutron stars, ideas are products of colliding perspectives.</em></h6></center>
 
@@ -905,6 +946,9 @@ public class World
           <div class="row justify-content-center text-center">
             <div class="col-md-5">
               <div class="subscribe-1">
+
+                <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;"><em>&ldquo;Technology alone is not enough&mdash;it's technology married with liberal arts, married with the humanities, that yields us the results that make our hearts sing.&rdquo;</em> &mdash;Steve Jobs</h2>
+                <br>
                 <h2>Never want to miss a story?</h2>
                 <p class="mb-5">
                   Subscribe to Short Stories from a Coder to get notifications whenever a new story is posted.
