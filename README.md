@@ -3,3 +3,5 @@
 # [Short Stories from a Coder](https://shortstoriesfromacoder.netlify.app)
 
 Source code for 'Short Stories from a Coder.'
+
+> *“Technology alone is not enough&mdash;it's technology married with liberal arts, married with the humanities, that yields us the results that make our hearts sing.”* &mdash;Steve Jobs
