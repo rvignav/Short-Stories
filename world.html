@@ -85,7 +85,7 @@ public class World
         private long population;
 
         public World(int year) {
-            population = 7800000000 * Math.exp(1.0136 * year - 2020);
+            population = 7800000000 * Math.exp(1.0136 * (year - 2020));
             if (pandemic) checkPandemicResponse();
             System.out.println(Arrays.toString(checkGlobalResources(year)));
         }
