@@ -74,7 +74,7 @@
 
   @media only screen and (max-width: 2000px) { 
       #type {
-        position: relative; left:10%;
+        position: relative; left:18%;
       }
       #code2 {
       position: relative;top:40px;left:10%;text-align: right;
@@ -149,6 +149,12 @@
   from { width: 0 }
   to { width: 100% }
 }
+                        @font-face {
+    font-family: 'CMU Typewriter Text Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CMU Typewriter Text Regular'), url('vendor/cmunbtl.woff') format('woff');
+    }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
@@ -160,7 +166,7 @@
   <div id="wrapper">
     <div id="tot" style="position: absolute; ">
      
-      <center><h1 id="type" style="color:#FFF; font-family: Courier, monospace;">System.out.println("Code isn't my first language.")</h1></center>
+      <center><h1 id="type" style="color:#FFF; font-family: CMU Typewriter Text Regular;">System.out.println(&ldquo;Code isn't my first language.&rdquo;)</h1></center>
       <center id="code" style="color:#FFF;"><h6><em>Just as gold is formed from colliding<br>neutron stars, ideas are products of<br>colliding perspectives.</em></h6></center>
       <center id="code2" style="color:#FFF;"><h6><em>Just as gold is formed from colliding neutron stars, ideas are products of colliding perspectives.</em></h6></center>
 
